@@ -10,7 +10,7 @@ Material:
   m_Name: MRTK_GemCoffee_mat
   m_Shader: {fileID: 4800000, guid: c331f6c43a2ef0945864cb668f2653c9, type: 3}
   m_ShaderKeywords: _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT _HOVER_LIGHT
-    _LIGHTMAPPING_REALTIME _PROXIMITY_LIGHT _SPECULAR_HIGHLIGHTS
+    _PROXIMITY_LIGHT _SPECULAR_HIGHLIGHTS _USE_WORLD_SCALE
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -69,6 +69,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AlbedoAlphaMode: 0
     - _AlbedoAssignedAtRuntime: 0
@@ -194,6 +195,8 @@ Material:
     - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
     - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
     - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
+    - _GradientAlpha: {r: 1, g: 1, b: 1, a: 1}
+    - _GradientAlphaTime: {r: 0, g: 0, b: 0, a: 0}
     - _GradientColor0: {r: 0.631373, g: 0.631373, b: 0.631373, a: 0}
     - _GradientColor1: {r: 1, g: 0.690196, b: 0.976471, a: 0.25}
     - _GradientColor2: {r: 0, g: 0.33, b: 0.88, a: 0.5}
