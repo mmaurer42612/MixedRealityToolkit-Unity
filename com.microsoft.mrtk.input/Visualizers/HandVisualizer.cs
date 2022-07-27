@@ -119,14 +119,13 @@ namespace Microsoft.MixedReality.Toolkit.Input
             
             for (int i = 0; i < constraints.Length; i++)
             {
+                constraints[i].transform.position = joints[i+1].Position;
                 if (i == 0)
                 {
-                    constraints[i].transform.position = joints[i + 1].Position + constRotations.transform.position;
                     constraints[i].rotation = joints[i+1].Rotation * constRotations.transform.rotation;
                 }
                 else
                 {
-                    constraints[i].transform.position = joints[i + 1].Position;
                     constraints[i].rotation = joints[i + 1].Rotation * Quaternion.Euler(180,90,0);
                 }
                 
